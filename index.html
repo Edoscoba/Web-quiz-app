@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- div for starting  screen-->
+    <div class="start-screen">
+        <p>You have 10 seconds to answer each Question</p>
+        <!-- button to start the quiz  -->
+        <button id="start-button">Start</button>
+      </div> 
+      <!-- End of the starting screen -->
+
+
+      <!-- the main quiz  -->
+      <div id="wrapper">   
+        <div id="display-container">
+            <!-- header div -->
+          <div class="header">
+            <!-- div to track user the user progress -->
+            <div class="number-of-count">
+                <!-- div to display the number of questions to answer -->
+              <span class="number-of-question"></span>
+            </div>
+            <!-- timer div -->
+            <div class="timer-div">
+              <img src="https://svgshare.com/i/iRM.svg" />
+              <span class="time-left"></span>
+            </div>
+          </div>
+          <div id="container">
+            <!-- Question and options are displayed here -->
+          </div>
+          <div class="btn-container">
+            <!-- button for the next button  -->
+            <button id="next-button">Next</button>
+          </div>
+        </div>
+      
+      </div>
+      <div class="score-container hide">
+        <!-- div to display the user score -->
+        <div id="user-score"></div>
+        <!-- button to restart the quiz -->
+        <button id="restart">Restart</button>
+      </div>
+
+
+</body>
+
+</html>
